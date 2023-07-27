@@ -56,7 +56,7 @@ def search_car (brand_search: str,energy: str,km_min: int,km_max: int,year_min: 
                 motor = str(motor.text)
                 km = km.text.replace('\xa0',"")
                 km = km.replace('km',"")
-                km = int(km)
+                km = km
                 price = price.text.replace('€',"")
                 price = price.replace(" ","")
                 price = int(price)
